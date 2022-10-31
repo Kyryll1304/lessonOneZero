@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  box-sizing: border-box;
+  font-family: "Graphik", sans-serif;
+  background-color: #eeeeee;
+  overflow-x: hidden;
+}
+@font-face {
+  font-family: "Graphik";
+  src: url(fonts/GraphikLCG-Regular.woff);
+  src: url(fonts/GraphikLCG-Regular.woff2);
+  src: url(fonts/GraphikLCG-Semibold.woff);
+  src: url(fonts/GraphikLCG-Semibold.woff2);
+}
+a {
+  text-decoration: none;
+}
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  padding: 2vw 4vw 2vw 4vw;
+}
+.navSection {
+  display: flex;
+  align-items: center;
+}
+.navEl {
+  display: flex;
+  padding: 10px 15px;
+}
+.lin {
+  border: 1px solid black;
+  width: 7vw;
+  background-color: white;
+  height: 3vw;
+  font-size: 16px;
+  font-weight: 600;
+}
+nav a {
+  font-size: 15px;
+  text-decoration: none;
+}
+.tif {
+  border: 1px solid white;
+  background-color: #ff6336;
+  width: 7vw;
+  height: 3vw;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+#intro {
+  margin-top: 0.1vw;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 5vw 5vw;
+}
+.introSection {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+}
+#intro h1 {
+  font-size: 65px;
+  font-weight: 600;
+}
+#intro h2 {
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: 2vw;
+}
+.introButtons {
+  margin-top: 2vw;
+}
+.tifTwo {
+  border: 1px solid white;
+  background-color: #ff6336;
+  width: 10vw;
+  height: 4vw;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+.bad {
+  border: 1px solid black;
+  width: 10vw;
+  background-color: white;
+  height: 4vw;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 1vw;
+}
+#intro p {
+  margin-top: 1vw;
+  font-size: 15px;
+  font-weight: 400;
+}
+#logos {
+  text-align: center;
+  background-color: #ff9c7d;
+  padding: 5vw 3vw;
+}
+.logosContainer {
+  margin-top: 5vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#logos h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+#examples {
+  background-color: white;
+  padding: 5vw 5vw 2vw 5vw;
+}
+.photoRight {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10vw;
+}
+.photoLeft {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10vw;
+}
+.exText {
+  padding: 2vw;
+}
+.exPhoto {
+  margin: 2vw;
+}
+#examples h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+#examples p {
+  margin-top: 2vw;
+  font-size: 20px;
+  font-weight: 400;
+}
+#examples h2 {
+  margin-top: 2vw;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+#examples a {
+  color: black;
+}
+#logosTwo {
+  text-align: center;
+}
+.logosBeige {
+  padding-top: 7vw;
+  padding-bottom: 5vw;
+  background-color: #fff8e4;
+}
+.logosBeigeContainer {
+  padding: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.lbe {
+  width: 33%;
+  padding: 2vw;
+}
+.logosBeige h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+.logosBeige h2 {
+  padding: 1vw;
+  font-size: 25px;
+  font-weight: 400;
+}
+.logosBeige p {
+  font-size: 18px;
+  font-weight: 400;
+}
+.grayBlock {
+  background-color: white;
+  text-align: left;
+  padding: 5vw;
+}
+.gbc {
+  margin-top: 2vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.gbe {
+  padding: 2vw;
+}
+.grayBlock h1 {
+  margin-left: 1.5vw;
+  font-size: 50px;
+  font-weight: 600;
+}
+.grayBlock h2 {
+  margin-top: 2vw;
+  font-size: 30px;
+  font-weight: 600;
+}
+.grayBlock p {
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  font-size: 20px;
+  font-weight: 300;
+}
+.grayBlock a {
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
+}
+.blueBlock {
+  display: flex;
+  align-items: center;
+  background-color: #c9e8f2;
+}
+.bbs {
+  padding: 5vw;
+}
+.blueBlock h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.blueBlock h2 {
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  font-size: 15px;
+  font-weight: 400;
+}
+.brownBlock {
+  background-color: #dabc98;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.brbs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 3vw;
+}
+
+.brownBlock img {
+  padding: 2vw;
+}
+.brownBlock h1 {
+  margin-left: 2vw;
+  font-weight: 600;
+  font-size: 35px;
+}
+#outro {
+  text-align: center;
+}
+.pigeons {
+  padding: 10vw;
+}
+.pigeons h1 {
+  font-size: 65px;
+  font-weight: 600;
+}
+.pigeons h2 {
+  margin-bottom: 3vw;
+  margin-top: 1vw;
+  font-size: 25px;
+  font-weight: 600;
+}
+.pigeons img {
+  margin-bottom: 5vw;
+}
+.pigeon {
+  margin-right: 1vw;
+  border: 1px solid white;
+  background-color: #ff6336;
+  width: 12vw;
+  height: 4vw;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+.redBlock {
+  background-color: #ff9c7d;
+  padding: 10vw;
+}
+.redBlock h1 {
+  font-size: 65px;
+  font-weight: 600;
+}
+.redBlock h2 {
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  font-size: 20px;
+  font-weight: 300;
+}
+.rbb {
+  border: 1px solid black;
+  background-color: black;
+  width: 12vw;
+  height: 4vw;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+.footerFlex {
+  align-items: flex-start;
+  justify-content: space-around;
+  display: flex;
+  padding: 5vw;
+}
+.ffsOne {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+.ffsTwo {
+  display: flex;
+  margin-top: -1.5vw;
+  flex-direction: row;
+}
+.ffsEl {
+  padding: 2vw;
+}
+ul li {
+  list-style: none;
+  padding: 0.4vw;
+}
+.footerFlex h2 {
+  margin-left: 0.5vw;
+  font-size: 20px;
+  margin-bottom: 2vw;
+}
+li a {
+  font-size: 15px;
+  color: black;
+}
+.footerFlex h1 {
+  margin-bottom: 1vw;
+  font-size: 50px;
+}
+.footerFlex img {
+  margin-bottom: 1vw;
+}
+.footerFlex h3 {
+  margin-top: 2vw;
+  font-size: 20px;
+  color: black;
+}
+.footerFlex a {
+  color: black;
+}
+.footer {
+  padding: 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+.footerSection {
+  display: flex;
+  justify-content: space-between;
+}
+.footer p {
+  margin-left: 2vw;
+}
